@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/style.css'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Calcule INSS e IRPF</h1>
+    </header>
+    <section id='inputs'>
+        <div class='caixas'>
+            <p>Informe o seu nome abaixo</p>
+            <input id='nom' type='text'>
+        </div>
+        <div class='caixas'>
+            <p>Informe o número de dependentes</p>
+            <input id='numd' type='number'>
+        </div>
+        <div class='caixas'>
+            <p>Informe o salário bruto</p>
+            <div id='reais'>
+                <p>R$</p>
+                <input id='salar' type='number' placeholder="0000.00">
+            </div>
+        </div>
+    </section>
+    <div id='btn'>
+        <button id='botao'>Calcule</button>
+    </div>
+    <section id='container'>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td>Número de dependentes</td>
+                    <td>Salário Bruto</td>
+                    <td>% Desconto INSS</td>
+                    <td>Desconto INSS</td>
+                    <td>% Desconto IRPF</td>
+                    <td>Desconto IRPF</td>
+                    <td>Salário Líquido</td>
+                </tr>
+            </thead>
+            <tbody id='tb'>
+                
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+<script type='text/javascript' src='javascript/script.js'></script>
+</html>
